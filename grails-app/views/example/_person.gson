@@ -1,0 +1,10 @@
+import example.Person
+
+model {
+    Person person
+}
+
+json {
+    name person.name
+    lastName person.propertyMissing('lastName')
+}
